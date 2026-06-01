@@ -1,0 +1,30 @@
+{
+  "name": "madark-dse-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:auth": "playwright test tests/dse-apis/auth/",
+    "test:params": "playwright test tests/dse-apis/risk-engine/get-parameters.spec.ts",
+    "test:evaluate": "playwright test tests/dse-apis/risk-engine/evaluate.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Madark DSE API Automation Tests",
+  "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.5.0",
+    "ajv": "^8.17.1",
+    "dotenv": "^16.4.7",
+    "module-alias": "^2.2.3"
+  },
+  "_moduleAliases": {
+    "@configuration": "./config",
+    "@madark-dse-api": "./portals/madark-dse-api"
+  }
+}
