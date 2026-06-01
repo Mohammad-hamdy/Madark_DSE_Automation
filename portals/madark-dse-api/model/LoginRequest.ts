@@ -1,13 +1,13 @@
 export interface ILoginRequest {
-  username?: string;
+  email?: string;
   password?: string;
 }
 
 class LoginRequest {
   private request: ILoginRequest = {};
 
-  setUsername(username: string) {
-    this.request.username = username;
+  setUsername(email: string) {
+    this.request.email = email;
     return this;
   }
 
@@ -17,7 +17,7 @@ class LoginRequest {
   }
 
   getUsername() {
-    return this.request.username;
+    return this.request.email;
   }
 
   getPassword() {
