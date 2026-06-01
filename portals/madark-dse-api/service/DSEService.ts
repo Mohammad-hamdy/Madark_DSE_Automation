@@ -64,9 +64,14 @@ export class DSEService {
         headers: this.authHeader(),
       }
     );
-    const json = await response.json();
-    console.log(`Mock application response: ${JSON.stringify(json)}`);
-    return json;
+    try {
+      const json = await response.json();
+      console.log(`Mock application response: ${JSON.stringify(json)}`);
+      return json;
+    } catch (error) {
+      console.log(`Mock application response: empty or non-JSON body`);
+      return {};
+    }
   }
 
   // ─── Parameters ──────────────────────────────────────────────────────────────
