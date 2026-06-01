@@ -6,7 +6,7 @@
     "test": "playwright test",
     "test:auth": "playwright test tests/dse-apis/auth/",
     "test:params": "playwright test tests/dse-apis/risk-engine/get-parameters.spec.ts",
-    "test:evaluate": "playwright test tests/dse-apis/risk-engine/evaluate.spec.ts"
+    "test:evaluate": "playwright test tests/dse-apis/risk-engine/evaluate/"
   },
   "keywords": [],
   "author": "",
