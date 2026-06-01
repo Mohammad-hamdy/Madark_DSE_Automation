@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 import configModule from "@configuration/config";
-import SimahEvaluateRequest from "@madark-dse-api/model/SimahEvaluateRequest";
+import SimahEvaluateRequest from "@madark-dse-api/model/06-SimahEvaluateRequest";
 import { setupEvaluateContext, expectErrorContract } from "./shared";
 
 const { getTestData } = configModule;

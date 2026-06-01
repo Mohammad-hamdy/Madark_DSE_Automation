@@ -3,7 +3,7 @@ import configModule from "@configuration/config";
 const { config, getTestData } = configModule;
 
 import { DSEService } from "@madark-dse-api/service/DSEService";
-import LoginRequest from "@madark-dse-api/model/LoginRequest";
+import LoginRequest from "@madark-dse-api/model/01-LoginRequest";
 import { DSE_STEP_NAMES } from "@madark-dse-api/utils/constants/steps/stepNames";
 
 test.describe("DSE - Risk Engine: Get Step Parameters", () => {

@@ -3,7 +3,7 @@ import configModule from "@configuration/config";
 const { config, getTestData } = configModule;
 
 import { DSEService } from "@madark-dse-api/service/DSEService";
-import LoginRequest from "@madark-dse-api/model/LoginRequest";
+import LoginRequest from "@madark-dse-api/model/01-LoginRequest";
 import { HttpStatusCodes } from "@madark-dse-api/utils/constants/status-code/statusCode";
 
 test.describe("DSE - Auth: Login", () => {

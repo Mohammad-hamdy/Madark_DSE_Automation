@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 import configModule from "@configuration/config";
-import SalaryEvaluateRequest from "@madark-dse-api/model/SalaryEvaluateRequest";
+import SalaryEvaluateRequest from "@madark-dse-api/model/05-SalaryEvaluateRequest";
 import { setupEvaluateContext, expectErrorContract } from "./shared";
 
 const { getTestData } = configModule;

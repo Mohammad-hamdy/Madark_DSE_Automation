@@ -3,8 +3,8 @@ import configModule from "@configuration/config";
 const { config, getTestData } = configModule;
 
 import { DSEService } from "@madark-dse-api/service/DSEService";
-import LoginRequest from "@madark-dse-api/model/LoginRequest";
-import ApplicationRequest from "@madark-dse-api/model/ApplicationRequest";
+import LoginRequest from "@madark-dse-api/model/01-LoginRequest";
+import ApplicationRequest from "@madark-dse-api/model/02-ApplicationRequest";
 
 test.describe("DSE - Auth: Create Mock Application", () => {
   let dse: DSEService;

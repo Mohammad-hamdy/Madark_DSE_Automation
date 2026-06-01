@@ -2,9 +2,9 @@ import { expect, APIRequestContext } from "@playwright/test";
 import { randomUUID } from "crypto";
 import configModule from "@configuration/config";
 import { DSEService } from "@madark-dse-api/service/DSEService";
-import LoginRequest from "@madark-dse-api/model/LoginRequest";
-import ApplicationRequest from "@madark-dse-api/model/ApplicationRequest";
-import AmlEvaluateRequest from "@madark-dse-api/model/AmlEvaluateRequest";
+import LoginRequest from "@madark-dse-api/model/01-LoginRequest";
+import ApplicationRequest from "@madark-dse-api/model/02-ApplicationRequest";
+import AmlEvaluateRequest from "@madark-dse-api/model/03-AmlEvaluateRequest";
 
 const { config } = configModule;
 

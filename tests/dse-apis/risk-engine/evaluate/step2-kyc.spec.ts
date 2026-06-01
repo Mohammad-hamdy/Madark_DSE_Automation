@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 import configModule from "@configuration/config";
-import KycEvaluateRequest from "@madark-dse-api/model/KycEvaluateRequest";
+import KycEvaluateRequest from "@madark-dse-api/model/04-KycEvaluateRequest";
 import { setupEvaluateContext, expectErrorContract } from "./shared";
 
 const { getTestData } = configModule;
